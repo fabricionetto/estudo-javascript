@@ -8,22 +8,30 @@
             font: normal 20pt Arial;
             background: rgb(19, 119, 19);
             color: white;
-            width: 600px;
-            height: 600px;
-            line-height: 200px;
+            width: 350px;
+            height: 350px;
+            line-height: 350px;
             text-align: center;
         }
     </style>
     <title>Eventos Dom</title>
 </head>
 <body>
-    <div id="area" onclick="clicar()">
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">
         interja...
     </div>
     <script>
         function clicar() {
             var a = window.document.getElementById('area');
-            a.innerText = 'Clicou aqui!!! atualize navegador para voltar para o que era antes'
+            a.innerText = 'Clicou aqui!!';
+        }
+        function entrou() {
+            var a = window.document.getElementById('area');
+            a.innerText = 'entrou aqui!!!'
+        }
+        function saiu() {
+            var a = window.document.getElementById('area');
+            a.innerText = 'saiu aqui!!!'
         }
     </script>
 </body>
