@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div#res {
+            background-color: black;
+            color: white;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 50%;
+        }
+
+        .cx1 {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .cx2 {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            
+        }
+    </style>
+    <title>Somar</title>
+</head>
+<body>
+       <input class="cx1" type="number" id="txt1"> +
+       <input class="cx2" type="number" id="txt2">
+       <input type="button" value="somar" onclick="soma()">
+       <div id="res">Resultado</div>
+       <script>
+            function soma() {
+                var num1 = window.document.getElementById('txt1');
+                var num2 = window.document.getElementById('txt2');
+                var res = window.document.getElementById('res')
+                var n1 = Number(num1.value);
+                var n2 = Number(num2.value);
+                var s = n1 + n2;
+            res.innerHTML = s;
+            }
+       </script>
+
+</body>
+</html>

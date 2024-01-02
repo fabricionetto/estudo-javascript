@@ -21,13 +21,16 @@
         interja...
     </div>
     <script>
+         var a = window.document.getElementById('area');
         function clicar() {
-            var a = window.document.getElementById('area');
             a.innerText = 'Clicou aqui!!';
+            a.style.background = 'red';
         }
         function entrou() {
             var a = window.document.getElementById('area');
-            a.innerText = 'entrou aqui!!!'
+            a.innerText = 'entrou aqui!!!';
+            a.style.background = 'blue';
+            a.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
         }
         function saiu() {
             var a = window.document.getElementById('area');
